@@ -55,3 +55,8 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "principal_id" {
+  description = "Microsoft Entra ID object ID of the user"
+  type        = string
+}

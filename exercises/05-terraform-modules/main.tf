@@ -68,6 +68,7 @@ module "eventhub" {
   partition_count   = var.eventhub_partition_count
   message_retention = 1
 
-  tags = local.common_tags
+  tags         = local.common_tags
+  principal_id = data.azurerm_client_config.current.object_id
 }
 

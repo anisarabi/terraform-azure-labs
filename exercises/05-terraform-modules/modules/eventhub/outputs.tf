@@ -23,3 +23,13 @@ output "consumer_group_name" {
   description = "Consumer Group name"
   value       = azurerm_eventhub_consumer_group.this.name
 }
+
+output "sender_role_assignment_id" {
+  description = "Sender role assignment ID"
+  value       = azurerm_role_assignment.sender.id
+}
+
+output "receiver_role_assignment_id" {
+  description = "Receiver role assignment ID"
+  value       = azurerm_role_assignment.receiver.id
+}

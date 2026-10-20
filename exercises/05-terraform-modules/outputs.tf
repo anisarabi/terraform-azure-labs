@@ -54,3 +54,11 @@ output "eventhub_id" {
 output "eventhub_consumer_group" {
   value = module.eventhub.consumer_group_name
 }
+
+output "eventhub_sender_role_id" {
+  value = module.eventhub.sender_role_assignment_id
+}
+
+output "eventhub_receiver_role_id" {
+  value = module.eventhub.receiver_role_assignment_id
+}
